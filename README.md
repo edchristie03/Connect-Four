@@ -2,6 +2,14 @@
 
 This repository contains two Python implementations of a board game simulation based on the *m-n-k* game (a generalization of Connect Four). Both implementations allow interactive gameplay and performance evaluation on different board configurations.
 
+## Project Structure
+```
+Project folder/
+├─ Plots/
+├─ four_connect.py
+├─ four_connect_pruned.py
+```
+
 ## File Overview
 
 - **four_connect.py**  
@@ -9,6 +17,9 @@ This repository contains two Python implementations of a board game simulation b
 
 - **four_connect_pruned.py**  
   Enhances the basic implementation by incorporating alpha-beta pruning into the minimax algorithm. This optimization reduces the number of nodes evaluated in the search tree, resulting in faster move recommendations and improved performance.
+
+- **Plots/**  
+    Contains the generated plots from the performance metrics of both implementations. The plots visualize the execution time and number of states visited during the evaluation process.
 
 ## Features
 
@@ -36,13 +47,6 @@ Run the following command to launch the game with alpha-beta pruning:
 python four_connect_pruned.py
 
 Follow the on-screen prompts to enter your moves. The board will update accordingly, and the AI will recommend the best move based on its evaluation.
-
-## Repo Structure
-
-├── four_connect.py         # Standard minimax implementation of the game.
-├── four_connect_pruned.py  # Minimax implementation with alpha-beta pruning.
-└── README.md               # This readme file.
-──  Plots/                  # Contains time experiment results
 
 ## Dependencies
 
